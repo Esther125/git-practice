@@ -18,7 +18,7 @@ A **pointer** indicating my current working branch and the current state of my p
 ---
 
 ### What's the difference I discovered in `.git` file when operating git repo?
-I discover that every time I make a commit, I see new objects added in the `.git/objects` folder. 
+I discover that every time I add a new file and make a commit, I see new objects added in the `.git/objects` folder. 
 
 ![object](/images/objects_image.png)
 
