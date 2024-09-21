@@ -5,7 +5,7 @@ I chose `v20.17.0` version because it is the latest LTS version. Since I don't r
 
 ## Introduction of nvm & npm
 ### 1. nvm (Node Version Manager)
-`nvm` is a <u>version manager</u> for Node.js, enabling you to <u>easily install, switch between, and manage multiple versions of Node.js</u> on your system. This flexibility allows you to work on different projects that may require specific versions of Node.js without conflicts.
+`nvm` is a **version manager** for Node.js, enabling you to **easily install, switch between, and manage multiple versions of Node.js** on your system. This flexibility allows you to work on different projects that may require specific versions of Node.js without conflicts.
 
 Unlike npm, which will be installed when you download Node.js, you need to download nvm by yourself.Below are some commonly used features and commands of nvm:
 
@@ -39,7 +39,7 @@ We can see that there are two versions available now.
 
 
 ### 2. npm (Node Package Manager)
-`npm` is a <u>package manager</u> for Node.js, enabling the <u>installation, management, and sharing of JavaScript packages</u>. Below are some commonly used features and commands of npm:
+`npm` is a **package manager** for Node.js, enabling the **installation, management, and sharing of JavaScript packages**. Below are some commonly used features and commands of npm:
 
 
 #### 2.1 Initialize a Node Project
@@ -47,7 +47,7 @@ We can initialize a node project with the following command:
 ```zsh
 npm init
 ```
-We can see npm added a `package.json` file to our project after initialization. This file will record the project's metadata, including dependencies, scripts, and configuration options, <u> ensuring that the environment is consistent across different setups </u>.
+We can see npm added a `package.json` file to our project after initialization. This file will record the project's metadata, including dependencies, scripts, and configuration options, **ensuring that the environment is consistent across different setups.**
 
 ![npm-init-result](/images/week-02/npm-init-result.png)
 
@@ -67,7 +67,7 @@ After executing the command, we will see that npm installs the express package a
 
 Additionally, a new entry will appear in the `node_modules` directory, containing all the necessary files for the express package. 
 
-This directory is created when we install our first package, and it is essential for managing dependencies in our project. However, we <u>don't</u> need to upload this folder to our Github repo.
+This directory is created when we install our first package, and it is essential for managing dependencies in our project. However, we **don't** need to upload this folder to our Github repo.
 
 ![node-modules](/images/week-02/node-modules.png)
 
@@ -106,7 +106,7 @@ Now, we can see npm really executed `app.js` and printed out the result: `Hello,
 
 ## Supplementary Information
 ### How to Display the Git Branch Name in  macOS Terminal?
-For this topic, <u>I wrote a technical blog</u> to document how I successfully changed my terminal settings. You can refer to my blog here: [My HackMD](https://hackmd.io/@liyichen125/ryxM_I3a0)
+For this topic, **I wrote a technical blog** to document how I successfully changed my terminal settings. You can refer to my blog here: [My HackMD](https://hackmd.io/@liyichen125/ryxM_I3a0)
 
 
 ## Reference
