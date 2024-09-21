@@ -20,11 +20,11 @@ A **pointer** indicating my current working branch and the current state of my p
 ### What's the difference I discovered in `.git` file when operating git repo?
 I discover that every time I add a new file and make a commit, I see new objects added in the `.git/objects` folder. 
 
-![object](/images/objects_image.png)
+![object](/images/week-01/objects_image.png)
 
 Additionally, the `.git/logs` folder updates to record the details of these changes. This includes every commit with information on the commit ID, author, branch, and message, providing a traceable history of updates within the project.
 
-![log](/images/log_image.png)
+![log](/images/week-01/log_image.png)
 
 
 ---
