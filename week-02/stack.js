@@ -32,13 +32,11 @@ export default class Stack {
   // 檢查 stack 是否為空
   isEmpty() {
     // TODO
-    let bool = null
     if (this.#items.length==0){
-        bool = true;
+       return true;
     }else{
-        bool = false;
+        return false;
     }
-    return bool;
   }
 
   // 回傳 stack 中元素的個數
