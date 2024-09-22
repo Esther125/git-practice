@@ -19,7 +19,7 @@ function sum_with_recursion(ary) {
 		return ary[0]+sum_with_recursion(ary.slice(1));
 	}
 }
-console.log(sum_with_recursion ([1, 5, 3, 2])); // 11
+console.log(sum_with_recursion([1, 5, 3, 2])); // 11
 
 
 // Advanced
