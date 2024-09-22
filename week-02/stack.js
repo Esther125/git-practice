@@ -11,14 +11,14 @@ export default class Stack {
 
   // 在 stack 頂部加入元素i
   push(element) {
-		// TODO
-        this.#items.push(element);
+    // TODO
+    this.#items.push(element);
   }
 
   // 移除並回傳 stack 頂部的元素
   pop() {
-		// TODO
-        return this.#items.pop();
+    // TODO
+    return this.#items.pop();
   }
 
   // 回傳 stack 頂部的元素，但不移除它
