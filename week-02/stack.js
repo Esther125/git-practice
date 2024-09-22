@@ -1,6 +1,6 @@
 // 完成以下 TODO 的部分，並且以 Module 的方式匯出 (ESM)
 export default class Stack {
-	// TODO: # 有特別的意思嗎？請以註解回覆。
+    // TODO: # 有特別的意思嗎？請以註解回覆。
     // TODO: Indicates a task that needs to be implemented after this comment.
     
   #items;
