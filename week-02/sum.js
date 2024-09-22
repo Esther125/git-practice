@@ -10,7 +10,7 @@ console.log(sum_with_reduce([1, 5, 3, 2])); // 11
 
 // Method2: Use Recursion
 function sum_with_recursion(ary) {
-	if (ary.length === 0) {
+	if (ary.length == 0) {
 		return 0; 
 	}
 	if (ary.length == 1){
