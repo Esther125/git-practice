@@ -16,4 +16,4 @@ console.log(fib(0)); // 0
 console.log(fib(1)); // 1
 console.log(fib(5)); // 5
 console.log(fib(10)); // 55
-console.log(fib(15))
+console.log(fib(15)) // 610
