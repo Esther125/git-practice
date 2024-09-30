@@ -81,21 +81,23 @@ To sum up, the factors I will take into consideration when choosing AWS Region a
 
 ### C.1 What are dependencies and devDependencies in package.json?
 
--   Dependencies: These are the packages required for your application to run in production. They are installed when you run npm install and are essential for the app's core functionality.
+-   **Dependencies:** These are the packages required for your application to run **in production**. They are installed when you run `npm install [package-name]` and are essential for the app's core functionality.
+
+    ![dependencies](../images/week-03/dependencies.png)
+
+-   **devDependencies:** These are the packages needed **only during development and testing**, such as testing frameworks or build tools. They are **not necessary** for the production environment. You can add new package to devDependencies by running `npm add [package-name] --save-dev`.
+
+    For example, if I want to add `eslint` to my devDependencies, I need to use the following command:
 
     ```
-    "dependencies": {
-        "express": "^4.17.1"
-    }
+    npm install eslint --save-dev
     ```
 
--   devDependencies: These are the packages needed only during development, such as testing frameworks or build tools. They are installed with npm install --save-dev and are not necessary for the production environment.
+    ![dev-install](../images/week-03/dev-install.png)
 
-    ```
-    "devDependencies": {
-        "jest": "^27.0.0"
-    }
-    ```
+    Afterward, I can get the result like this:
+
+    ![dev-dependency](../images/week-03/dev-dependency.png)
 
 ### C.2 How to use the scripts block in package.json?
 
