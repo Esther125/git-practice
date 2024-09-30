@@ -17,14 +17,14 @@
     -   [ ] c.4 Best practices for managing files in a GitHub repository
         -   [ ] c.4.1 Which files should be included in a GitHub repository and which should be excluded?
         -   [ ] c.4.2 Why?
-    -   [ ] c.5 Import modules in JavaScript: CJS vs ESM
-        -   [ ] c.5.1 Introduction
-        -   [ ] c.5.2 How to use?
-    -   [ ] c.6 (Advanced) What is localhost?
-    -   [ ] c.7 (Advanced) Curl Introduction
-        -   [ ] c.7.1 What is curl?
-        -   [ ] c.7.2 How to use curl to test network connections?
-        -   [ ] c.7.3 What are the common parameters?
+    -   [x] c.5 Import modules in JavaScript: CJS vs ESM
+        -   [x] c.5.1 Introduction
+        -   [x] c.5.2 How to use?
+    -   [x] c.6 (Advanced) What is localhost?
+    -   [x] c.7 (Advanced) Curl Introduction
+        -   [x] c.7.1 What is curl?
+        -   [x] c.7.2 How to use curl to test network connections?
+        -   [x] c.7.3 What are the common parameters?
 -   [x] D. Group Project
     -   [x] d.1 [Group Members List](group.md)
 
@@ -77,9 +77,9 @@ To sum up, the factors we need to take into consideration when choosing AWS Regi
 
 ## C. Build Express Project
 
-### Observations of `package.json` & `node_modules`
+### c.1 Observations of `package.json` & `node_modules`
 
-### Verifying the Server is Running
+### c.2 Verifying the Server is Running
 
 I added a start script in the `package.json` file, allowing me to start the server using `npm start`. After running the command, I visited http://localhost:3000/ and saw the following output:
 
@@ -87,7 +87,7 @@ I added a start script in the `package.json` file, allowing me to start the serv
 
 This confirms that the server is running successfully.
 
-### Modify the Port Number Using Environment Variables
+### c.3 Modify the Port Number Using Environment Variables
 
 To make the port configurable through environment variables, follow these steps:
 
@@ -113,6 +113,102 @@ To make the port configurable through environment variables, follow these steps:
 ![update-port](../images/week-03/update-port.png)
 
 With this setup, you can easily change the port number by modifying the value in the `.env` file, **without having to alter the code in `app.js`**.
+
+### c.5 Import modules in JavaScript: CJS vs ESM
+
+#### c.5.1 Introduction
+
+In JavaScript, there are two main module systems: CommonJS (CJS) and ECMAScript Modules (ESM).
+
+-   **CJS**: Older standard used primarily in Node.js, where modules are loaded synchronously using `require()`.
+-   **ESM**: Newer standard supported natively in modern JavaScript environments, where modules are imported **asynchronously** using `import` and `export` statements.
+
+#### c.5.2 How to use?
+
+**1. CommonJS (CJS)**:
+
+-   use `require()` to import modules.
+-   Use `module.exports` or `exports` to export modules.
+-   Example:
+
+    ```javascript
+    // Exporting in CJS
+    module.exports = function sayHello() {
+        console.log("Hello, CJS!");
+    };
+
+    // Importing in CJS
+    const sayHello = require("./sayHello");
+    sayHello();
+    ```
+
+**2. ECMAScript Modules (ESM)**:
+
+-   Use `import` to bring in modules.
+-   Use `export` to define what should be accessible from the module.
+-   Example:
+
+        ```javascript
+        // Exporting in ESM
+        export function sayHello() {
+            console.log("Hello, ESM!");
+        }
+
+        // Importing in ESM
+        import { sayHello } from "./sayHello.js";
+        sayHello();
+        ```
+
+    _Note: In Node.js, you'll need to set "type": "module" in your package.json to use ESM._
+
+### c.6 (Advanced) What is localhost?
+
+Localhost refers to your **own computer's address**, typically mapped to `127.0.0.1`. It's used to access services running **locally**, allowing you to test applications on your machine without needing an external network.
+
+### c.7 (Advanced) Curl Introduction
+
+#### c.7.1 What is curl?
+
+`Curl` is a command-line tool commonly used to test APIs, download files, and troubleshoot network issues by **sending requests and receiving responses from servers**.
+
+#### c.7.2 How to use curl to test network connections?
+
+You can use the following command to test a network connection:
+
+```
+curl http://example.com
+```
+
+This sends a basic GET request to the http://example.com and displays the response. You will see the result like this:
+
+![curl-example](../images/week-03/curl-example.png)
+
+#### c.7.3 What are the common parameters?
+
+1. `-I`: Fetch only the headers of the response.
+   ![curl-header](../images/week-03/curl-header.png)
+2. `-X [HTTP_METHOD]`: Specify the HTTP method (e.g., GET, POST).
+
+    ```
+    curl -X POST http://example.com
+    ```
+
+3. `-d [data]`: Send data with a POST request.
+
+    ```
+    curl -d "name=John" http://example.com
+    ```
+
+4. `-o [filename]`: Save the response to a file.
+
+    ```
+    curl -o output.html http://example.com
+    ```
+
+5. `-u [user:password]`: Use for basic authentication.
+    ```
+    curl -u username:password http://example.com
+    ```
 
 ## Reference
 
