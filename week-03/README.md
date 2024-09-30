@@ -3,33 +3,30 @@
 ## Table of Content
 
 -   [x] A. AWS Region Concepts Introduction
-    -   [x] A.1 Introduction of AWS Region, AZ (availability zones)
-    -   [x] A.2 Which AWS region should I choose when using AWS services?
+    -   [x] a.1 Introduction of AWS Region, AZ (availability zones)
+    -   [x] a.2 Which AWS region should I choose when using AWS services?
 -   [x] B. Callback & Promise Practice
-    -   [x] [Callback Function Practice](./callback.js)
-    -   [x] (Advanced) [Improve the previous practice with Promise](promise.js)
+    -   [x] b.1 [Callback Function Practice](./callback.js)
+    -   [x] b.2 (Advanced) [Improve the previous practice with Promise](promise.js)
 -   [ ] C. Build Express Project
-    -   [x] Build [backend folder](/backend/)
-    -   [x] npm init
-    -   [x] npm install express
-    -   [ ] Observations of `package.json` & `node_modules`
-    -   [x] Build `app.js`
-    -   [x] Verifying the Server is Running
-    -   [x] Modify the Port Number Using Environment Variables
--   [ ] Observations and usages of `package.json`
-    -   [ ] What are dependencies and devDependencies in `package.json`?
-    -   [ ] How to use the scripts block in scripts `package.json`?
--   [ ] Best practices for managing files in a GitHub repository
-    -   [ ] Which files should be included in a GitHub repository and which should be excluded?
-    -   [ ] Why?
--   [ ] Import modules in JavaScript: CJS vs ESM
-    -   [ ] Introduction
-    -   [ ] How to use?
--   [ ] (Advanced) What is localhost?
--   [ ] (Advanced) Curl Introduction
-    -   [ ] What is curl?
-    -   [ ] How to use curl to test network connections?
-    -   [ ] What are the common parameters?
+    -   [ ] c.1 Observations and Usage of `package.json` & `node_modules`
+        -   [ ] c.1.1 What are dependencies and devDependencies in `package.json`?
+        -   [ ] c.1.2 How to use the scripts block in scripts `package.json`?
+    -   [x] c.2 Verifying the Server is Running
+    -   [x] c.3 Modify the Port Number Using Environment Variables
+    -   [ ] c.4 Best practices for managing files in a GitHub repository
+        -   [ ] c.4.1 Which files should be included in a GitHub repository and which should be excluded?
+        -   [ ] c.4.2 Why?
+    -   [ ] c.5 Import modules in JavaScript: CJS vs ESM
+        -   [ ] c.5.1 Introduction
+        -   [ ] c.5.2 How to use?
+    -   [ ] c.6 (Advanced) What is localhost?
+    -   [ ] c.7 (Advanced) Curl Introduction
+        -   [ ] c.7.1 What is curl?
+        -   [ ] c.7.2 How to use curl to test network connections?
+        -   [ ] c.7.3 What are the common parameters?
+-   [x] D. Group Project
+    -   [x] d.1 [Group Members List](group.md)
 
 ## A. AWS Concepts Introduction
 
@@ -76,13 +73,7 @@
     -   **Disaster Recovery & Fault Tolerance**
         If your application requires high availability and fault tolerance, selecting an AWS region with multiple AZs is crucial.
 
-To sum up, the factors we need to take into consideration when choosing AWS Region are:
-
--   Latency
--   Regulation
--   Cost-efficiency
--   Service Availability
--   Disaster Recovery & Fault Tolerance
+To sum up, the factors we need to take into consideration when choosing AWS Region are: **Latency, Regulation, Cost-efficiency, Service Availability and Disaster Recovery & Fault Tolerance.**
 
 ## C. Build Express Project
 
