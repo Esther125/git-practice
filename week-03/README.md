@@ -23,7 +23,10 @@ C. Build Express Project
     -   [x] C.6.1 Introduction
     -   [x] C.6.2 How to use?
 -   [x] C.7 (Advanced) What is localhost?
--   [x] C.8 (Advanced) Curl Introduction - [x] C.8.1 What is curl? - [x] C.8.2 How to use curl to test network connections? - [x] C.8.3 What are the common parameters?
+-   [x] C.8 (Advanced) Curl Introduction
+    -   [x] C.8.1 What is curl?
+    -   [x] C.8.2 How to use curl to test network connections?
+    -   [x] C.8.3 What are the common parameters?
 
 D. Group Project
 
