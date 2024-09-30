@@ -8,10 +8,10 @@
 -   [x] B. Callback & Promise Practice
     -   [x] b.1 [Callback Function Practice](./callback.js)
     -   [x] b.2 (Advanced) [Improve the previous practice with Promise](promise.js)
--   [ ] C. Build Express Project
-    -   [ ] c.1 Observations and Usage of `package.json` & `node_modules`
-        -   [ ] c.1.1 What are dependencies and devDependencies in `package.json`?
-        -   [ ] c.1.2 How to use the scripts block in scripts `package.json`?
+-   [x] C. Build Express Project
+    -   [x] c.1 Observations and Usage of `package.json` & `node_modules`
+        -   [x] c.1.1 What are dependencies and devDependencies in `package.json`?
+        -   [x] c.1.2 How to use the scripts block in scripts `package.json`?
     -   [x] c.2 Verifying the Server is Running
     -   [x] c.3 Modify the Port Number Using Environment Variables
     -   [x] c.4 Best practices for managing files in a GitHub repository
@@ -78,6 +78,36 @@ To sum up, the factors we need to take into consideration when choosing AWS Regi
 ## C. Build Express Project
 
 ### c.1 Observations of `package.json` & `node_modules`
+
+#### C.1.1 What are dependencies and devDependencies in package.json?
+
+-   Dependencies: These are the packages required for your application to run in production. They are installed when you run npm install and are essential for the app's core functionality.
+
+    ```
+    "dependencies": {
+        "express": "^4.17.1"
+    }
+    ```
+
+-   devDependencies: These are the packages needed only during development, such as testing frameworks or build tools. They are installed with npm install --save-dev and are not necessary for the production environment.
+
+    ```
+    "devDependencies": {
+        "jest": "^27.0.0"
+    }
+    ```
+
+#### C.1.2 How to use the scripts block in package.json?
+
+The scripts block in package.json defines custom commands that can be run using npm run. These scripts can automate tasks like starting the server, running tests, or building the project. For example, you can define a start script with the following settings:
+
+![](../images/week-03/start-script.png)
+
+Then you can use the following command to replace `node app.js`
+
+```
+npm start
+```
 
 ### c.2 Verifying the Server is Running
 
