@@ -14,9 +14,9 @@
         -   [ ] c.1.2 How to use the scripts block in scripts `package.json`?
     -   [x] c.2 Verifying the Server is Running
     -   [x] c.3 Modify the Port Number Using Environment Variables
-    -   [ ] c.4 Best practices for managing files in a GitHub repository
-        -   [ ] c.4.1 Which files should be included in a GitHub repository and which should be excluded?
-        -   [ ] c.4.2 Why?
+    -   [x] c.4 Best practices for managing files in a GitHub repository
+        -   [x] c.4.1 Which files should be included in a GitHub repository and which should be excluded?
+        -   [x] c.4.2 Why?
     -   [x] c.5 Import modules in JavaScript: CJS vs ESM
         -   [x] c.5.1 Introduction
         -   [x] c.5.2 How to use?
@@ -113,6 +113,26 @@ To make the port configurable through environment variables, follow these steps:
 ![update-port](../images/week-03/update-port.png)
 
 With this setup, you can easily change the port number by modifying the value in the `.env` file, **without having to alter the code in `app.js`**.
+
+### c.4 Best practices for managing files in a GitHub repository
+
+#### c.4.1 Which files should be included in a GitHub repository and which should be excluded?
+
+-   Include:
+    -   Source code (.js, .py, etc.)
+    -   Configuration files (package.json, docker-compose.yml, etc.)
+    -   Documentation (README.md)
+    -   Important scripts and assets (images, stylesheets)
+-   Exclude:
+    -   Sensitive data (.env, API keys)
+    -   Dependencies (node_modules, vendor)
+    -   Build outputs (dist, build)
+    -   Temporary files (logs, caches)
+
+#### c.4.2 Why?
+
+-   Including relevant files ensures collaboration, version control, and project transparency.
+-   Excluding unnecessary or sensitive files protects security, reduces repo size, and avoids redundant data (like libraries or build artifacts that can be generated locally).
 
 ### c.5 Import modules in JavaScript: CJS vs ESM
 
