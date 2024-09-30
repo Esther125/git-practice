@@ -172,14 +172,19 @@ Although I do not upload `.env` file, I create another `example.env` file instea
 
 ### C.6 Import modules in JavaScript: CJS vs ESM
 
-#### C.6.1 Introduction
+### C.6.1 Introduction
 
-In JavaScript, there are two main module systems: CommonJS (CJS) and ECMAScript Modules (ESM).
+In JavaScript, there are two import module systems: CommonJS (CJS) and ECMAScript Modules (ESM). The following table shows the difference of these two import modules:
 
--   **CJS**: Older standard used primarily in Node.js, where modules are loaded synchronously using `require()`.
--   **ESM**: Newer standard supported natively in modern JavaScript environments, where modules are imported **asynchronously** using `import` and `export` statements.
+| Feature                 | ESM (ECMAScript Modules)                                                                      | CommonJS (CJS)                                                   |
+| ----------------------- | --------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
+| **Standard Age**        | Newer standard                                                                                | Older standard                                                   |
+| **Syntax**              | Uses `import` and `export`                                                                    | Uses `require` and `module.exports` or `exports`                 |
+| **Loading Time**        | **Static loading**, dependencies are resolved at **compile time**                             | **Dynamic loading**, modules are loaded on demand at **runtime** |
+| **Runtime Environment** | Supported natively in modern JavaScript environments; modules are imported **asynchronously** | Primarily used in Node.js; modules are loaded **synchronously**  |
+| **Compatibility**       | Incompatible with CJS modules                                                                 | Incompatible with ESM                                            |
 
-#### C.6.2 How to use?
+### C.6.2 How to use?
 
 **1. CommonJS (CJS)**:
 
@@ -188,11 +193,15 @@ In JavaScript, there are two main module systems: CommonJS (CJS) and ECMAScript 
 -   Example:
 
     ```javascript
+    // Filename: sayHello.js
     // Exporting in CJS
     module.exports = function sayHello() {
         console.log("Hello, CJS!");
     };
+    ```
 
+    ```javascript
+    // Filename: app.js
     // Importing in CJS
     const sayHello = require("./sayHello");
     sayHello();
@@ -204,16 +213,20 @@ In JavaScript, there are two main module systems: CommonJS (CJS) and ECMAScript 
 -   Use `export` to define what should be accessible from the module.
 -   Example:
 
-        ```javascript
-        // Exporting in ESM
-        export function sayHello() {
-            console.log("Hello, ESM!");
-        }
+    ```javascript
+    // Filename: sayHello.js
+    // Exporting in ESM
+    export function sayHello() {
+        console.log("Hello, ESM!");
+    }
+    ```
 
-        // Importing in ESM
-        import { sayHello } from "./sayHello.js";
-        sayHello();
-        ```
+    ```javascript
+    // Filename: app.js
+    // Importing in ESM
+    import { sayHello } from "./sayHello.js";
+    sayHello();
+    ```
 
     _Note: In Node.js, you'll need to set "type": "module" in your package.json to use ESM._
 
@@ -223,11 +236,11 @@ Localhost refers to your **own computer's address**, typically mapped to `127.0.
 
 ### C.8 (Advanced) Curl Introduction
 
-#### C.8.1 What is curl?
+### C.8.1 What is curl?
 
 `Curl` is a command-line tool commonly used to test APIs, download files, and troubleshoot network issues by **sending requests and receiving responses from servers**.
 
-#### C.8.2 How to use curl to test network connections?
+### C.8.2 How to use curl to test network connections?
 
 You can use the following command to test a network connection:
 
@@ -239,7 +252,7 @@ This sends a basic GET request to the http://example.com and displays the respon
 
 ![curl-example](../images/week-03/curl-example.png)
 
-#### C.8.3 What are the common parameters?
+### C.8.3 What are the common parameters?
 
 1. `-I`: Fetch only the headers of the response.
 
