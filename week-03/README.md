@@ -3,25 +3,22 @@
 ## Table of Content
 
 -   [x] A. AWS Region Concepts Introduction
-    -   [x] a.1 Introduction of AWS Region, AZ (availability zones)
-    -   [x] a.2 Which AWS region should I choose when using AWS services?
+    -   [x] A.1 Introduction of AWS Region, AZ (availability zones)
+    -   [x] A.2 Which AWS region should I choose when using AWS services?
 -   [x] B. Callback & Promise Practice
-    -   [x] b.1 [Callback Function Practice](./callback.js)
-    -   [x] b.2 (Advanced) [Improve the previous practice with Promise](promise.js)
+    -   [x] B.1 [Callback Function Practice](./callback.js)
+    -   [x] B.2 (Advanced) [Improve the previous practice with Promise](promise.js)
 -   [x] C. Build Express Project
-    -   [x] c.1 Observations and Usage of `package.json` & `node_modules`
-        -   [x] c.1.1 What are dependencies and devDependencies in `package.json`?
-        -   [x] c.1.2 How to use the scripts block in scripts `package.json`?
-    -   [x] c.2 Verifying the Server is Running
-    -   [x] c.3 Modify the Port Number Using Environment Variables
-    -   [x] c.4 Best practices for managing files in a GitHub repository
-        -   [x] c.4.1 Which files should be included in a GitHub repository and which should be excluded?
-        -   [x] c.4.2 Why?
-    -   [x] c.5 Import modules in JavaScript: CJS vs ESM
+    -   [x] C.1 What are dependencies and devDependencies in `package.json`?
+    -   [x] C.2 How to use the scripts block in scripts `package.json`?
+    -   [x] C.3 Verifying the Server is Running
+    -   [x] C.4 Modify the Port Number Using Environment Variables
+    -   [x] C.5 Which files should be included in a GitHub repository and which should be excluded? Why?
+    -   [x] C.6 Import modules in JavaScript: CJS vs ESM
         -   [x] c.5.1 Introduction
         -   [x] c.5.2 How to use?
-    -   [x] c.6 (Advanced) What is localhost?
-    -   [x] c.7 (Advanced) Curl Introduction
+    -   [x] C.7 (Advanced) What is localhost?
+    -   [x] C.8 (Advanced) Curl Introduction
         -   [x] c.7.1 What is curl?
         -   [x] c.7.2 How to use curl to test network connections?
         -   [x] c.7.3 What are the common parameters?
@@ -144,9 +141,7 @@ To make the port configurable through environment variables, follow these steps:
 
 With this setup, you can easily change the port number by modifying the value in the `.env` file, **without having to alter the code in `app.js`**.
 
-### c.4 Best practices for managing files in a GitHub repository
-
-#### c.4.1 Which files should be included in a GitHub repository and which should be excluded?
+### C.5 Which files should be included in a GitHub repository and which should be excluded? Why?
 
 -   Include:
     -   Source code (.js, .py, etc.)
@@ -154,26 +149,26 @@ With this setup, you can easily change the port number by modifying the value in
     -   Documentation (README.md)
     -   Important scripts and assets (images, stylesheets)
 -   Exclude:
+
     -   Sensitive data (.env, API keys)
     -   Dependencies (node_modules, vendor)
     -   Build outputs (dist, build)
     -   Temporary files (logs, caches)
 
-#### c.4.2 Why?
+-   Why?
+    -   Including relevant files ensures collaboration, version control, and project transparency.
+    -   Excluding unnecessary or sensitive files protects security, reduces repo size, and avoids redundant data (like libraries or build artifacts that can be generated locally).
 
--   Including relevant files ensures collaboration, version control, and project transparency.
--   Excluding unnecessary or sensitive files protects security, reduces repo size, and avoids redundant data (like libraries or build artifacts that can be generated locally).
+### C.6 Import modules in JavaScript: CJS vs ESM
 
-### c.5 Import modules in JavaScript: CJS vs ESM
-
-#### c.5.1 Introduction
+#### C.6.1 Introduction
 
 In JavaScript, there are two main module systems: CommonJS (CJS) and ECMAScript Modules (ESM).
 
 -   **CJS**: Older standard used primarily in Node.js, where modules are loaded synchronously using `require()`.
 -   **ESM**: Newer standard supported natively in modern JavaScript environments, where modules are imported **asynchronously** using `import` and `export` statements.
 
-#### c.5.2 How to use?
+#### C.6.2 How to use?
 
 **1. CommonJS (CJS)**:
 
@@ -211,17 +206,17 @@ In JavaScript, there are two main module systems: CommonJS (CJS) and ECMAScript 
 
     _Note: In Node.js, you'll need to set "type": "module" in your package.json to use ESM._
 
-### c.6 (Advanced) What is localhost?
+### C.7 (Advanced) What is localhost?
 
 Localhost refers to your **own computer's address**, typically mapped to `127.0.0.1`. It's used to access services running **locally**, allowing you to test applications on your machine without needing an external network.
 
-### c.7 (Advanced) Curl Introduction
+### C.8 (Advanced) Curl Introduction
 
-#### c.7.1 What is curl?
+#### C.8.1 What is curl?
 
 `Curl` is a command-line tool commonly used to test APIs, download files, and troubleshoot network issues by **sending requests and receiving responses from servers**.
 
-#### c.7.2 How to use curl to test network connections?
+#### C.8.2 How to use curl to test network connections?
 
 You can use the following command to test a network connection:
 
@@ -233,7 +228,7 @@ This sends a basic GET request to the http://example.com and displays the respon
 
 ![curl-example](../images/week-03/curl-example.png)
 
-#### c.7.3 What are the common parameters?
+#### C.8.3 What are the common parameters?
 
 1. `-I`: Fetch only the headers of the response.
 
