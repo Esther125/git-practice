@@ -1,4 +1,4 @@
-// 不更動原本的 doJob 函數
+// Do not modify the original doJob function
 function doJob(job, time, cb) {
     setTimeout(() => {
         let now = new Date();
@@ -6,28 +6,26 @@ function doJob(job, time, cb) {
     }, time);
 }
 
-// 執行順序: 刷牙 1sec -> 吃早餐 3 sec -> 寫功課 1sec -> 吃午餐 2sec
+// Execution order: 刷牙 1sec -> 吃早餐 3 sec -> 寫功課 1sec -> 吃午餐 2sec
 let now = new Date();
 console.log(`開始工作 at ${now.toISOString()}`);
 
-// 利用 Promise 優化程式
-// 將原本的 doJob 函數多包一層 使他能返回 Promise 物件
+// Optimize the code using Promise
+// Wrap the original doJob function to make it return a Promise object
 function doJobPromise(job, time) {
     return new Promise((resolve) => {
         doJob(job, time, resolve);
-        // 當 doJob 完成時，調用 resolve()，並將結果傳遞給 doJobPromise
-        // 這樣 doJobPromise 就知道該 Promise 已經解決了（resolved）
-        // doJob 函數中會把 "完成工作" 的字樣傳遞給 resolve
+        // doJob calls resolve() and passes the "完成工作..." message when it completes
+        // When the resolve() is called, doJobPromise knows the Promise has been resolved
     });
 }
 
 doJobPromise("刷牙", 1000)
-    // 當 Promise 物件的狀態從 pending 變成 resolved
-    // .then() 會被觸發，接收由 resolve() 傳遞的結果
+    // When the state of the Promise object changes from pending to resolved
+    // .then() will be triggered, receiving the result passed by resolve()
     .then((result) => {
         console.log(result);
-        // 前個任務執行後返回下一個任務的 Promise 物件
-        // 繼續執行下一個任務
+        // After the previous task, return the Promise object for the next task
         return doJobPromise("吃早餐", 3000);
     })
     .then((result) => {

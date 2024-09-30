@@ -51,33 +51,31 @@ D. Group Project
 
 ### A.2 Which AWS region should I choose when using AWS services?
 
--   **Gaming Industry**
+I will choose different regions based on what I prioritize:
 
-    -   Key factor: **Latency**
-    -   Region: Select a region **close to your primary player base** to reduce response time.
-    -   Example: If most of your players are in Asia, choose a region like _Asia Pacific (Tokyo)_ or _Asia Pacific (Seoul)_ to provide a better gaming experience.
+1. **Latency:**
 
--   **Financial Sector**
+    If minimizing latency is my priority, I will choose a region **closer to my user base**.
 
-    -   Key factor: **Regulation**
-    -   Region: Choose a **region where the data center is located within your country** or where the **financial regulations allow**.
+    For example, if I am developing a game, I will select a region nearest to the majority of players to reduce response times.
 
--   **Startups and Individual Users**
+2. **Regulatory Restrictions:**
 
-    -   Key factor: **Cost-efficiency**
-    -   Region: Opt for regions that offer **lower pricing**
-    -   Example: Regions like _US East (N. Virginia)_ typically provide more affordable service rates since the region is close to AWS's headquarters and major data centers.
+    For tasks that are subject to specific regulatory requirements, I will select **a region that complies with these regulations**.
 
--   **Important factors for every industry and user**
+    For instance, financial applications might require data centers to be located within the country or a region that adheres to financial laws.
 
-    -   **Service Availability**
+3. **Costs:**
 
-        Not all AWS services are available in every region, particularly newer services or advanced features. Before selecting an AWS region, it's important to verify that the region offers the specific services you need.
+    Budget is always a major concern since I am very poor, so I will choose regions that **offer lower service rates**.
 
-    -   **Disaster Recovery & Fault Tolerance**
-        If your application requires high availability and fault tolerance, selecting an AWS region with multiple AZs is crucial.
+    For example, the _US East (N. Virginia) region_ typically provides more affordable rates because it is close to AWS's headquarters and major data centers.
 
-To sum up, the factors we need to take into consideration when choosing AWS Region are: **Latency, Regulation, Cost-efficiency, Service Availability and Disaster Recovery & Fault Tolerance.**
+4. **Service Availability**:
+
+    Not all AWS services are available in every region, especially the latest services and features. Before selecting an AWS region, I will ensure it offers the specific services I need.
+
+To sum up, the factors I will take into consideration when choosing AWS Region are: **Latency, Regulation, Cost-efficiency and Service Availability**
 
 ## C. Build Express Project
 
