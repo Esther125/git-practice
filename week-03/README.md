@@ -2,28 +2,32 @@
 
 ## Table of Content
 
--   [x] A. AWS Region Concepts Introduction
-    -   [x] A.1 Introduction of AWS Region, AZ (availability zones)
-    -   [x] A.2 Which AWS region should I choose when using AWS services?
--   [x] B. Callback & Promise Practice
-    -   [x] B.1 [Callback Function Practice](./callback.js)
-    -   [x] B.2 (Advanced) [Improve the previous practice with Promise](promise.js)
--   [x] C. Build Express Project
-    -   [x] C.1 What are dependencies and devDependencies in `package.json`?
-    -   [x] C.2 How to use the scripts block in scripts `package.json`?
-    -   [x] C.3 Verifying the Server is Running
-    -   [x] C.4 Modify the Port Number Using Environment Variables
-    -   [x] C.5 Which files should be included in a GitHub repository and which should be excluded? Why?
-    -   [x] C.6 Import modules in JavaScript: CJS vs ESM
-        -   [x] C.6.1 Introduction
-        -   [x] C.6.2 How to use?
-    -   [x] C.7 (Advanced) What is localhost?
-    -   [x] C.8 (Advanced) Curl Introduction
-        -   [x] C.8.1 What is curl?
-        -   [x] C.8.2 How to use curl to test network connections?
-        -   [x] C.8.3 What are the common parameters?
--   [x] D. Group Project
-    -   [x] d.1 [Group Members List](group.md)
+A. AWS Region Concepts Introduction
+
+-   [x] A.1 Introduction of AWS Region, AZ (availability zones)
+-   [x] A.2 Which AWS region should I choose when using AWS services?
+
+B. Callback & Promise Practice
+
+-   [x] B.1 [Callback Function Practice](./callback.js)
+-   [x] B.2 (Advanced) [Improve the previous practice with Promise](promise.js)
+
+C. Build Express Project
+
+-   [x] C.1 What are dependencies and devDependencies in `package.json`?
+-   [x] C.2 How to use the scripts block in scripts `package.json`?
+-   [x] C.3 Verifying the Server is Running
+-   [x] C.4 Modify the Port Number Using Environment Variables
+-   [x] C.5 Which files should be included in a GitHub repository and which should be excluded? Why?
+-   [x] C.6 Import modules in JavaScript: CJS vs ESM
+    -   [x] C.6.1 Introduction
+    -   [x] C.6.2 How to use?
+-   [x] C.7 (Advanced) What is localhost?
+-   [x] C.8 (Advanced) Curl Introduction - [x] C.8.1 What is curl? - [x] C.8.2 How to use curl to test network connections? - [x] C.8.3 What are the common parameters?
+
+D. Group Project
+
+-   [x] d.1 [Group Members List](group.md)
 
 ## A. AWS Concepts Introduction
 
