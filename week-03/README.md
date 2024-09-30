@@ -1,0 +1,33 @@
+# Cloud native system development and maintenance HW3
+## Table of Content
+- [] AWS Region Concepts Introduction
+    - [] Introduction of AWS Region, AZ (availability zones)
+    - [] Which AWS region should I choose when using AWS services, and what factors should I consider?
+- [] [Callback practice](./callback.js)
+    - [] (Advanced) [How to improve the callback practice with "Promise"?](promise.js)
+- [] Build Express Project
+    - [] build [backend folder](/backend/)
+    - [] npm init
+    - [] npm install express 
+    - [] `package.json` observations
+    - [] `node_modules` observations
+    - [] build `app.js`
+    - [] Start the server and visit http://localhost:3000/ to verify if it’s running successfully.
+    - [] Modify the port number to listen on by setting environment variables.
+- [] Observations and usages of `package.json`
+    - [] What are dependencies and devDependencies in `package.json`?
+    - [] How to use the scripts block in scripts `package.json`?
+- [] Environment variables settings
+    - [] How to modify the port number by setting environment variables?
+- [] Best practices for managing files in a GitHub repository
+    - [] Which files should be included in a GitHub repository and which should be excluded? 
+    - [] Why? 
+- [] Import modules in JavaScript: CJS vs ESM
+    - [] Introduction
+    - [] How to use?
+- [] (Advanced) What is localhost?
+- [] (Advanced) Curl Introduction
+    - [] What is curl? 
+    - [] How to use curl to test network connections?
+    - [] What are the common parameters?
+
