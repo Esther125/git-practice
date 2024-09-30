@@ -15,13 +15,13 @@
     -   [x] C.4 Modify the Port Number Using Environment Variables
     -   [x] C.5 Which files should be included in a GitHub repository and which should be excluded? Why?
     -   [x] C.6 Import modules in JavaScript: CJS vs ESM
-        -   [x] c.5.1 Introduction
-        -   [x] c.5.2 How to use?
+        -   [x] C.6.1 Introduction
+        -   [x] C.6.2 How to use?
     -   [x] C.7 (Advanced) What is localhost?
     -   [x] C.8 (Advanced) Curl Introduction
-        -   [x] c.7.1 What is curl?
-        -   [x] c.7.2 How to use curl to test network connections?
-        -   [x] c.7.3 What are the common parameters?
+        -   [x] C.8.1 What is curl?
+        -   [x] C.8.2 How to use curl to test network connections?
+        -   [x] C.8.3 What are the common parameters?
 -   [x] D. Group Project
     -   [x] d.1 [Group Members List](group.md)
 
