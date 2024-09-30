@@ -2,31 +2,31 @@
 
 ## Table of Content
 
-A. AWS Region Concepts Introduction
+[A. AWS Region Concepts Introduction](https://github.com/Esther125/git-practice/tree/main/week-03#a-aws-concepts-introduction)
 
--   [x] A.1 Introduction of AWS Region, AZ (availability zones)
--   [x] A.2 Which AWS region should I choose when using AWS services?
+-   [x] [A.1 Introduction of AWS Region, AZ (availability zones)](https://github.com/Esther125/git-practice/tree/main/week-03#a1-introduction-of-aws-region--azs-availability-zones)
+-   [x] [A.2 Which AWS region should I choose when using AWS services?](https://github.com/Esther125/git-practice/tree/main/week-03#a2-which-aws-region-should-i-choose-when-using-aws-services)
 
 B. Callback & Promise Practice
 
--   [x] B.1 [Callback Function Practice](./callback.js)
--   [x] B.2 (Advanced) [Improve the previous practice with Promise](promise.js)
+-   [x] [B.1 Callback Function Practice](./callback.js)
+-   [x] [B.2 (Advanced) Improve the previous practice with Promise](promise.js)
 
-C. Build Express Project
+[C. Build Express Project](https://github.com/Esther125/git-practice/tree/main/week-03#c-build-express-project)
 
--   [x] C.1 What are dependencies and devDependencies in `package.json`?
--   [x] C.2 How to use the scripts block in scripts `package.json`?
--   [x] C.3 Verifying the Server is Running
--   [x] C.4 Modify the Port Number Using Environment Variables
--   [x] C.5 Which files should be included in a GitHub repository and which should be excluded? Why?
--   [x] C.6 Import modules in JavaScript: CJS vs ESM
-    -   [x] C.6.1 Introduction
-    -   [x] C.6.2 How to use?
--   [x] C.7 (Advanced) What is localhost?
--   [x] C.8 (Advanced) Curl Introduction
-    -   [x] C.8.1 What is curl?
-    -   [x] C.8.2 How to use curl to test network connections?
-    -   [x] C.8.3 What are the common parameters?
+-   [x] [C.1 What are dependencies and devDependencies in `package.json`?](https://github.com/Esther125/git-practice/tree/main/week-03#c1-what-are-dependencies-and-devdependencies-in-packagejson)
+-   [x] [C.2 How to use the scripts block in scripts `package.json`?](https://github.com/Esther125/git-practice/tree/main/week-03#c2-how-to-use-the-scripts-block-in-packagejson)
+-   [x] [C.3 Verifying the Server is Running](https://github.com/Esther125/git-practice/tree/main/week-03#c3-verifying-the-server-is-running)
+-   [x] [C.4 Modify the Port Number Using Environment Variables](https://github.com/Esther125/git-practice/tree/main/week-03#c4-modify-the-port-number-using-environment-variables)
+-   [x] [C.5 Which files should be included in a GitHub repository and which should be excluded? Why?](https://github.com/Esther125/git-practice/tree/main/week-03#c5-which-files-should-be-included-in-a-github-repository-and-which-should-be-excluded-why)
+-   [x] [C.6 Import modules in JavaScript: CJS vs ESM](https://github.com/Esther125/git-practice/tree/main/week-03#c6-import-modules-in-javascript-cjs-vs-esm)
+    -   [x] [C.6.1 Introduction](https://github.com/Esther125/git-practice/tree/main/week-03#c61-introduction)
+    -   [x] [C.6.2 How to use?](https://github.com/Esther125/git-practice/tree/main/week-03#c62-how-to-use)
+-   [x] [C.7 (Advanced) What is localhost?](https://github.com/Esther125/git-practice/tree/main/week-03#c7-advanced-what-is-localhost)
+-   [x] [C.8 (Advanced) Curl Introduction](https://github.com/Esther125/git-practice/tree/main/week-03#c8-advanced-curl-introduction)
+    -   [x] [C.8.1 What is curl?](https://github.com/Esther125/git-practice/tree/main/week-03#c81-what-is-curl)
+    -   [x] [C.8.2 How to use curl to test network connections?](https://github.com/Esther125/git-practice/tree/main/week-03#c82-how-to-use-curl-to-test-network-connections)
+    -   [x] [C.8.3 What are the common parameters?](https://github.com/Esther125/git-practice/tree/main/week-03#c83-what-are-the-common-parameters)
 
 D. Group Project
 
