@@ -186,7 +186,9 @@ This sends a basic GET request to the http://example.com and displays the respon
 #### c.7.3 What are the common parameters?
 
 1. `-I`: Fetch only the headers of the response.
-   ![curl-header](../images/week-03/curl-header.png)
+
+    ![curl-header](../images/week-03/curl-header.png)
+
 2. `-X [HTTP_METHOD]`: Specify the HTTP method (e.g., GET, POST).
 
     ```
