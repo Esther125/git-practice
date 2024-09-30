@@ -74,9 +74,7 @@ To sum up, the factors we need to take into consideration when choosing AWS Regi
 
 ## C. Build Express Project
 
-### C.1 Observations of `package.json` & `node_modules`
-
-#### C.1.1 What are dependencies and devDependencies in package.json?
+### C.1 What are dependencies and devDependencies in package.json?
 
 -   Dependencies: These are the packages required for your application to run in production. They are installed when you run npm install and are essential for the app's core functionality.
 
@@ -94,7 +92,7 @@ To sum up, the factors we need to take into consideration when choosing AWS Regi
     }
     ```
 
-#### C.1.2 How to use the scripts block in package.json?
+### C.2 How to use the scripts block in package.json?
 
 The scripts block in package.json defines custom commands that can be run using npm run. These scripts can automate tasks like starting the server, running tests, or building the project. For example, you can define a start script with the following settings:
 
@@ -106,7 +104,7 @@ Then you can use the following command to replace `node app.js`
 npm start
 ```
 
-### c.2 Verifying the Server is Running
+### C.3 Verifying the Server is Running
 
 I added a start script in the `package.json` file, allowing me to start the server using `npm start`. After running the command, I visited http://localhost:3000/ and saw the following output:
 
@@ -114,7 +112,7 @@ I added a start script in the `package.json` file, allowing me to start the serv
 
 This confirms that the server is running successfully.
 
-### c.3 Modify the Port Number Using Environment Variables
+### C.4 Modify the Port Number Using Environment Variables
 
 To make the port configurable through environment variables, follow these steps:
 
