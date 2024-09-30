@@ -79,7 +79,7 @@ To sum up, the factors we need to take into consideration when choosing AWS Regi
 
 ### c.1 Observations of `package.json` & `node_modules`
 
-#### C.1.1 What are dependencies and devDependencies in package.json?
+#### c.1.1 What are dependencies and devDependencies in package.json?
 
 -   Dependencies: These are the packages required for your application to run in production. They are installed when you run npm install and are essential for the app's core functionality.
 
