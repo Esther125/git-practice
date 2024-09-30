@@ -231,7 +231,7 @@ In JavaScript, there are two import module systems: CommonJS (CJS) and ECMAScrip
 
 ### C.7 (Advanced) What is localhost?
 
-`localhost` refers to your **own computer's address**, typically mapped to `127.0.0.1`. It's used to access services running **locally**, allowing you to test applications on your machine without needing an external network.
+`localhost` refers to your **own computer's address** (**loopback**), typically mapped to `127.0.0.1`. It's used to access services running **locally**, allowing you to test applications on your machine.
 
 ### C.8 (Advanced) Curl Introduction
 
