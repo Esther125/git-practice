@@ -101,7 +101,9 @@ To sum up, the factors I will take into consideration when choosing AWS Region a
 
 ### C.2 How to use the scripts block in package.json?
 
-The scripts block in package.json defines custom commands that can be run using npm run. These scripts can automate tasks like starting the server, running tests, or building the project. For example, you can define a start script with the following settings:
+The scripts block in package.json defines custom commands that can be run using npm run. These scripts can automate tasks like starting the server, running tests, or building the project.
+
+For example, you can define a start script with the following settings:
 
 ![](../images/week-03/start-script.png)
 
@@ -110,6 +112,10 @@ Then you can use the following command to replace `node app.js`
 ```
 npm start
 ```
+
+![](../images/week-03/npm-start.png)
+
+We can see that `npm start` can really replace the `node app.js` command.
 
 ### C.3 Verifying the Server is Running
 
@@ -123,7 +129,7 @@ This confirms that the server is running successfully.
 
 To make the port configurable through environment variables, follow these steps:
 
-1. Create a .env file with the following content to define the port number:
+1. Create a `.env` file with the following content to define the port number:
     ```
     PORT=4000
     ```
@@ -131,38 +137,38 @@ To make the port configurable through environment variables, follow these steps:
     ```
     npm install dotenv
     ```
-3. Update `app.js` to load environment variables and set the port:
+3. Update `app.js` to load and set PORT environment variables:
 
-    ```
-    // Load dotenv to use the settings in the .env file
+    ```javascript
+    // Use dotenv to load the environment variables in the .env file
     require("dotenv").config();
 
-    // Set the default port to 3000
-    // If a port is defined in the .env file, use that value instead
+    const express = require("express");
+    const app = express();
+    // Use the PORT environment if it is defined
+    // Otherwise, use the default port 3000
     const port = process.env.PORT || 3000;
     ```
 
-![update-port](../images/week-03/update-port.png)
+    We can see the port runs on port 4000 now.
+
+    ![update-port](../images/week-03/update-port.png)
 
 With this setup, you can easily change the port number by modifying the value in the `.env` file, **without having to alter the code in `app.js`**.
 
 ### C.5 Which files should be included in a GitHub repository and which should be excluded? Why?
 
--   Include:
-    -   Source code (.js, .py, etc.)
-    -   Configuration files (package.json, docker-compose.yml, etc.)
-    -   Documentation (README.md)
-    -   Important scripts and assets (images, stylesheets)
--   Exclude:
+I will include **essential files for collaboration**, such as source code, configuration files for consistent settings, and documentation like README.md to clarify the project's purpose and setup instructions.
 
-    -   Sensitive data (.env, API keys)
-    -   Dependencies (node_modules, vendor)
-    -   Build outputs (dist, build)
-    -   Temporary files (logs, caches)
+On the other hand, files that include sensitive data such as `.env` and secret files should not be uploaded to Github. Unnecessary logs and cache files will also be omitted to streamline collaboration.
 
--   Why?
-    -   Including relevant files ensures collaboration, version control, and project transparency.
-    -   Excluding unnecessary or sensitive files protects security, reduces repo size, and avoids redundant data (like libraries or build artifacts that can be generated locally).
+I only include necessary files to **keep the repo neat and clear**. And I exclude files with sensitive data for security purpose.
+
+**(Supplementary)**
+
+Although I do not upload `.env` file, I create another `example.env` file instead and I upload it to Github.
+
+`example.env` file only include some environment variables that does not include sensitive data. This file can help my team members to set up `.env` file in a quick and convenient way. (As they just need to rename the `example.env` to `.env` then they can have most of the settings done.)
 
 ### C.6 Import modules in JavaScript: CJS vs ESM
 
