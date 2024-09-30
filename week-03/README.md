@@ -211,6 +211,7 @@ In JavaScript, there are two import module systems: CommonJS (CJS) and ECMAScrip
 
 -   Use `import` to bring in modules.
 -   Use `export` to define what should be accessible from the module.
+-   _**NOTICE:** In Node.js, you'll need to set `"type": "module"` in your `package.json` to use ESM._
 -   Example:
 
     ```javascript
@@ -228,11 +229,9 @@ In JavaScript, there are two import module systems: CommonJS (CJS) and ECMAScrip
     sayHello();
     ```
 
-    _Note: In Node.js, you'll need to set "type": "module" in your package.json to use ESM._
-
 ### C.7 (Advanced) What is localhost?
 
-Localhost refers to your **own computer's address**, typically mapped to `127.0.0.1`. It's used to access services running **locally**, allowing you to test applications on your machine without needing an external network.
+`localhost` refers to your **own computer's address**, typically mapped to `127.0.0.1`. It's used to access services running **locally**, allowing you to test applications on your machine without needing an external network.
 
 ### C.8 (Advanced) Curl Introduction
 
@@ -285,3 +284,4 @@ This sends a basic GET request to the http://example.com and displays the respon
 
 -   https://www.techtarget.com/searchcloudcomputing/tip/Understand-AWS-Regions-vs-Availability-Zones
 -   https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html#concepts-available-regions
+-   https://vocus.cc/article/649cc0e0fd89780001a7d34d
