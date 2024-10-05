@@ -28,13 +28,47 @@ B. Lab: Setting up an EC2 Instance and Deploying a Web Server
 
 ### A.1 `/etc`
 
+The full name of `/etc` is **Editable Text Config**. This directory save the config files for the software and therefore there are lots of files end with `.conf` in the file.
+
+![etc](../images/week-04/etc.png)
+
 ### A.2 `/var`
+
+This directory containes the variable files that will change when the OS is being used, such as `log`.
+
+![var](../images/week-04/var.png)
 
 ### A.3 `/boot`
 
+The directory cantains the files to boot the system such as the linux kernal.
+
 ### A.4 `$PATH` environment variable
 
+`$PATH` can map all the user binaries, enabling you to execute the user binaries in any directory in the terminal.
+
+(Example) I previously downloaded an application called ngrok. After downloading the binary, I had to add the path of ngrok to the `$PATH` environment variable. This adjustment ensured that when I used the ngrok command in the root terminal, it correctly located and executed ngrok from the specified path, allowing me to successfully run the application.
+
+You can use the following command to check your `$PATH` varible:
+
+```
+echo $PATH
+```
+
+![path](../images//week-04/path.png)
+
+I can see the path of java binary is already in the `$PATH` varible.
+
 ### A.5 `which` command
+
+By running the following command, you can get the full path of a specific binary:
+
+```
+which [BINARY_NAME]
+```
+
+For example, if I want to know the full path of my java binary:
+
+![which](../images/week-04/which.png)
 
 ## B. Lab: Setting up an EC2 Instance and Deploying a Web Server
 
