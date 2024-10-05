@@ -93,3 +93,5 @@ For example, if I want to know the full path of my java binary:
 ### B.10 Any other issues you encountered during the process?
 
 ### B.11 References
+
+-   https://www.youtube.com/watch?v=42iQKuQodW4
