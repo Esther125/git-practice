@@ -74,6 +74,10 @@ For example, if I want to know the full path of my java binary:
 
 ### B.1 Check the public IP of the instance is running
 
+My Public IP: http://13.114.81.210/
+
+![public-ip](../images/week-04/public-ip.png)
+
 ### B.2 What is an instance type?
 
 ### B.3 What is Nginx? What are its uses and features?
@@ -84,14 +88,35 @@ For example, if I want to know the full path of my java binary:
 
 ### B.6 Provide the Nginx configuration file from step 9 in the readme.
 
+```
+server {
+    listen 80;
+    server_name 13.114.81.210;
+
+    location / {
+        proxy_pass http://localhost:3000;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+    }
+}
+```
+
 ### B.7 What is a Security Group? What is its purpose? Are there any guidelines for setting it up?
 
 ### B.8 What is sudo? Why do you sometimes need to add sudo, and other times you do not?
 
 ### B.9 Where are the Nginx log files located? How did you find them? How do you view the Nginx logs?
 
+![nginx-log](../images/week-04/nginx-log.png)
+
 ### B.10 Any other issues you encountered during the process?
+
+No
 
 ### B.11 References
 
 -   https://www.youtube.com/watch?v=42iQKuQodW4
+-   GPT-4
