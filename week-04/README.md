@@ -164,7 +164,7 @@ In the lab, we set inbound rules for ports 22 and 80, which means allowing traff
 
 By opening port 80, the instance can serve web pages or run web-based applications via HTTP connections. By opening port 22, we enable SSH connections, allowing secure remote management of the instance.
 
-#### Guidelines for setting up Security Group:
+#### Guidelines for setting up Security Group
 
 Define rules that allow only the necessary traffic for your application. This minimizes exposure to potential security threats by limiting access to only what is essential. **(Principle of least privilege)**
 
@@ -172,7 +172,9 @@ Define rules that allow only the necessary traffic for your application. This mi
 
 `sudo` stands for "superuser do." It allows you to execute commands with **administrative privileges**.
 
-When I need greater permissions to run a command, I start the command with sudo. I don't use sudo for routine commands to avoid having excessive permissions, which could lead to errors.
+You use `sudo` when you need to perform tasks that require administrative or elevated privileges, such as installing software, changing system files, or configuring system settings. Tasks that don't affect system files or settings typically don't require `sudo`.
+
+I don't use sudo for routine commands to avoid having excessive permissions, which could lead to serious errors.
 
 ### B.9 Where are the Nginx log files located? How did you find them? How do you view the Nginx logs?
 
