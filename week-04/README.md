@@ -164,9 +164,9 @@ In the lab, we set inbound rules for ports 22 and 80, which means allowing traff
 
 By opening port 80, the instance can serve web pages or run web-based applications via HTTP connections. By opening port 22, we enable SSH connections, allowing secure remote management of the instance.
 
-#### Guidelines for setting up Security Group
+#### Guidelines for setting up Security Group: Principle of least privilege
 
-Define rules that allow only the necessary traffic for your application. This minimizes exposure to potential security threats by limiting access to only what is essential. **(Principle of least privilege)**
+Define rules that allow only the necessary traffic for your application. This minimizes exposure to potential security threats by limiting access to only what is essential.
 
 ### B.8 What is sudo? Why do you sometimes need to add sudo, and other times you do not?
 
