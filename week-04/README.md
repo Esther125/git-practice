@@ -136,9 +136,7 @@ Image Source: https://www.jyt0532.com/2019/11/18/proxy-reverse-proxy/
 Image Source: https://www.jyt0532.com/2019/11/18/proxy-reverse-proxy/
 
 **Why use Nginx to proxy to a web server developed with Express?**
-Besides the pros of reverse proxy above, here are some other reasons for us to use Nginx in a Express web server proxy:
-
-Node.js operates on a **single-threaded event loop**, which may struggle under CPU-heavy tasks or very high traffic. Nginx, with its efficient event-driven architecture, can handle many connections at once, relieving the Express server by managing HTTP connections and serving static content.
+Besides the pros of reverse proxy above, Node.js operates on a **single-threaded event loop**, which may struggle under CPU-heavy tasks or very high traffic. Nginx, with its efficient event-driven architecture, can handle many connections at once, relieving the Express server by managing HTTP connections and serving static content.
 
 ### B.6 Provide the Nginx configuration file from step 9 in the readme.
 
