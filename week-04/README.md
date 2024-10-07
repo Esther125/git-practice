@@ -106,9 +106,11 @@ Nginx is a lightweight **web server** that can also serve the following roles:
 -   **Load Balancer**
 -   Http Cache (replaced by CDN)
 
-Key Features of Nginx: efficiency, scalability,security
+Key Features of Nginx: efficiency, scalability, security
 
 ### B.4 What is the pm2 package? What is it used for?
+
+The pm2 package is a **process manager** for Node.js applications.
 
 ### B.5 What is meant by `proxy` as mentioned in step 9? Why use Nginx to proxy to a web server developed with Express? (Hint: Reverse proxy vs Forward Proxy)
 
@@ -139,6 +141,21 @@ server {
 When I need greater permissions to run a command, I start the command with sudo. I don't use sudo for routine commands to avoid having excessive permissions, which could lead to errors.
 
 ### B.9 Where are the Nginx log files located? How did you find them? How do you view the Nginx logs?
+
+In part A. Linux File System Directory Structure Introduction, I learned that `log` directory is located under the `/var` folder, and therefore I checked the folder first and then found that Nginx log files located at the path: `/var/log/nginx`
+
+There are two logs files: `access.log` & `error.log`
+
+-   `access.log` records every request sent to Nginx
+-   `error.log` records errors when nginx is handling requests
+
+I can view log with command:
+
+```shell
+# tail: outputs the last 10 lines of the file
+# `-f`: tail remains active and continues to output new content appended to the end of the file
+sudo tail -f /var/log/nginx/access.log
+```
 
 ![nginx-log](../images/week-04/nginx-log.png)
 
