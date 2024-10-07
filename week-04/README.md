@@ -83,6 +83,7 @@ My Public IP: http://13.114.81.210/
 An instance type specifies a configuration of CPU, memory, storage, and other resources available to a virtual machine in a cloud environment. Users can select different instance types based on their needs. An instance type contains the resources below:
 
 ![instance](../images/week-04/instance.jpg)
+
 Image Source: https://ithelp.ithome.com.tw/m/articles/10295411
 
 The instance type I use in this lab is `t2.micro`. The configurations of this instance type is:
@@ -96,21 +97,21 @@ Image Source: https://www.youtube.com/watch?v=7VAI73roXaY
 
 Nginx is a lightweight **web server** that can also serve the following roles:
 
--   **Reverse Proxy**
+1.  **Reverse Proxy**
 
     As a reverse proxy, Nginx allows you to manage the following tasks centrally, without needing to configure them on each individual server:
 
     -   Load SSL/TLS certificates to enable HTTPS connections
     -   Mitigate DDoS attacks
 
--   **Load Balancer**
--   Http Cache (replaced by CDN)
+2.  **Load Balancer**
+3.  Http Cache (replaced by CDN)
 
 Key Features of Nginx: efficiency, scalability, security
 
 ### B.4 What is the pm2 package? What is it used for?
 
-The pm2 package is a **process manager** for Node.js applications.
+`pm2` is a production **process manager** for Node.js applications with a built-in load balancer. It allows you to **keep applications alive forever**, to reload them without downtime and to facilitate common system admin tasks.
 
 ### B.5 What is meant by `proxy` as mentioned in step 9? Why use Nginx to proxy to a web server developed with Express? (Hint: Reverse proxy vs Forward Proxy)
 
