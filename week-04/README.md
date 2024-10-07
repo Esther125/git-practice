@@ -115,6 +115,8 @@ Key Features of Nginx: efficiency, scalability, security
 
 ### B.5 What is meant by `proxy` as mentioned in step 9? Why use Nginx to proxy to a web server developed with Express? (Hint: Reverse proxy vs Forward Proxy)
 
+The Nginx can
+
 ### B.6 Provide the Nginx configuration file from step 9 in the readme.
 
 ```
