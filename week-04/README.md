@@ -83,6 +83,7 @@ My Public IP: http://13.114.81.210/
 An instance type specifies a configuration of CPU, memory, storage, and other resources available to a virtual machine in a cloud environment. Users can select different instance types based on their needs. An instance type contains the resources below:
 
 ![instance](../images/week-04/instance.jpg)
+Image Source: https://ithelp.ithome.com.tw/m/articles/10295411
 
 The instance type I use in this lab is `t2.micro`. The configurations of this instance type is:
 
@@ -91,6 +92,7 @@ The instance type I use in this lab is `t2.micro`. The configurations of this in
 ### B.3 What is Nginx? What are its uses and features?
 
 ![nginx](../images/week-04/nginx.png)
+Image Source: https://www.youtube.com/watch?v=7VAI73roXaY
 
 Nginx is a lightweight **web server** that can also serve the following roles:
 
@@ -132,6 +134,10 @@ server {
 
 ### B.8 What is sudo? Why do you sometimes need to add sudo, and other times you do not?
 
+`sudo` stands for "superuser do." It allows you to execute commands with **administrative privileges**.
+
+When I need greater permissions to run a command, I start the command with sudo. I don't use sudo for routine commands to avoid having excessive permissions, which could lead to errors.
+
 ### B.9 Where are the Nginx log files located? How did you find them? How do you view the Nginx logs?
 
 ![nginx-log](../images/week-04/nginx-log.png)
@@ -146,4 +152,6 @@ No
 -   https://www.youtube.com/watch?v=42iQKuQodW4
 -   https://aws.amazon.com/tw/ec2/instance-types/t2/
 -   https://www.youtube.com/watch?v=7VAI73roXaY
+-   https://kucw.io/blog/nginx/
+-   https://zh.wikipedia.org/zh-tw/Sudo
 -   GPT-4
