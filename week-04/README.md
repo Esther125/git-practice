@@ -115,7 +115,30 @@ Key Features of Nginx: efficiency, scalability, security
 
 ### B.5 What is meant by `proxy` as mentioned in step 9? Why use Nginx to proxy to a web server developed with Express? (Hint: Reverse proxy vs Forward Proxy)
 
-The Nginx can
+"proxy" is a **middle layer** between client and server. In step 9, proxy to the express server means that putting Nginx in the middle of express server and client.
+
+**1. Reverse Proxy**
+
+![reverse-proxy](../images//week-04/reverse-proxy.png)
+
+Image Source: https://www.jyt0532.com/2019/11/18/proxy-reverse-proxy/
+
+-   Pros
+    1. **Load Balance**
+    2. **Caching**
+    3. **Improve Availability:** provides high availability and fault tolerance. If a backend server becomes unavailable, the reverse proxy can redirect traffic to other operational servers without the user noticing any disruption.
+    4. **Canary deveploment:** can roll out updates to only a small subset of users before making them available to the entire user base.
+
+**2. Forward Proxy**
+
+![forward-proxy](../images/week-04/forward-proxy.png)
+
+Image Source: https://www.jyt0532.com/2019/11/18/proxy-reverse-proxy/
+
+**Why use Nginx to proxy to a web server developed with Express?**
+Besides the pros of reverse proxy above, here are some other reasons for us to use Nginx in a Express web server proxy:
+
+Node.js operates on a **single-threaded event loop**, which may struggle under CPU-heavy tasks or very high traffic. Nginx, with its efficient event-driven architecture, can handle many connections at once, relieving the Express server by managing HTTP connections and serving static content.
 
 ### B.6 Provide the Nginx configuration file from step 9 in the readme.
 
@@ -182,4 +205,6 @@ No
 -   https://zh.wikipedia.org/zh-tw/Sudo
 -   https://ithelp.ithome.com.tw/articles/10237747
 -   https://medium.com/@awseducate.cloudambassador/%E6%8A%80%E8%A1%93%E5%88%86%E4%BA%AB-security-group%E5%92%8Ciam%E7%9A%84%E5%B7%AE%E5%88%A5%E7%82%BA%E4%BD%95-942d303565b7
+-   https://github.com/Unitech/pm2/blob/master/README.md
+-   https://www.jyt0532.com/2019/11/18/proxy-reverse-proxy/
 -   GPT-4
