@@ -134,6 +134,12 @@ server {
 
 ### B.7 What is a Security Group? What is its purpose? Are there any guidelines for setting it up?
 
+A Security Group acts as a **virtual firewall** that filters inbound and outbound traffic at the instance level. You can add rules to each security group that **allow specific ranges of IPs and ports** to reach its associated instances. The purpose of a Security Group is to **control access** to an instance from external networks, ensuring that only authorized traffic can access or leave the instance. (By default, if the inbound traffic can access the instance, the outbound should be allowed, too.)
+
+In the lab, we set inbound rules for ports 22 and 80, which means allowing traffic on these ports.
+
+By opening port 80, the instance can serve web pages or run web-based applications via HTTP connections. By opening port 22, we enable SSH connections, allowing secure remote management of the instance.
+
 ### B.8 What is sudo? Why do you sometimes need to add sudo, and other times you do not?
 
 `sudo` stands for "superuser do." It allows you to execute commands with **administrative privileges**.
@@ -171,4 +177,6 @@ No
 -   https://www.youtube.com/watch?v=7VAI73roXaY
 -   https://kucw.io/blog/nginx/
 -   https://zh.wikipedia.org/zh-tw/Sudo
+-   https://ithelp.ithome.com.tw/articles/10237747
+-   https://medium.com/@awseducate.cloudambassador/%E6%8A%80%E8%A1%93%E5%88%86%E4%BA%AB-security-group%E5%92%8Ciam%E7%9A%84%E5%B7%AE%E5%88%A5%E7%82%BA%E4%BD%95-942d303565b7
 -   GPT-4
