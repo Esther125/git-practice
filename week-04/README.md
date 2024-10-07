@@ -80,7 +80,31 @@ My Public IP: http://13.114.81.210/
 
 ### B.2 What is an instance type?
 
+An instance type specifies a configuration of CPU, memory, storage, and other resources available to a virtual machine in a cloud environment. Users can select different instance types based on their needs. An instance type contains the resources below:
+
+![instance](../images/week-04/instance.jpg)
+
+The instance type I use in this lab is `t2.micro`. The configurations of this instance type is:
+
+![t2-micro](../images/week-04/t2-micro.png)
+
 ### B.3 What is Nginx? What are its uses and features?
+
+![nginx](../images/week-04/nginx.png)
+
+Nginx is a lightweight **web server** that can also serve the following roles:
+
+-   **Reverse Proxy**
+
+    As a reverse proxy, Nginx allows you to manage the following tasks centrally, without needing to configure them on each individual server:
+
+    -   Load SSL/TLS certificates to enable HTTPS connections
+    -   Mitigate DDoS attacks
+
+-   **Load Balancer**
+-   Http Cache (replaced by CDN)
+
+Key Features of Nginx: efficiency, scalability,security
 
 ### B.4 What is the pm2 package? What is it used for?
 
@@ -118,5 +142,8 @@ No
 
 ### B.11 References
 
+-   https://ithelp.ithome.com.tw/m/articles/10295411
 -   https://www.youtube.com/watch?v=42iQKuQodW4
+-   https://aws.amazon.com/tw/ec2/instance-types/t2/
+-   https://www.youtube.com/watch?v=7VAI73roXaY
 -   GPT-4
